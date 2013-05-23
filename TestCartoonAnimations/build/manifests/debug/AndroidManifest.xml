@@ -3,20 +3,28 @@
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17"/>
 
     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
-        <activity android:label="@string/app_name" android:name="com.bnotions.test_cartoon_animations.MainActivity">
+        <activity android:label="TestCartoonOrganicAnim" android:name="com.bnotions.test_cartoon_animations.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.bnotions.test_cartoon_animations.SecondActivity">
+        <activity android:label="TestHoursAnim" android:name="com.bnotions.test_cartoon_animations.SecondActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:label="TestCartoonMoveAnim" android:name="com.bnotions.test_cartoon_animations.ThirdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bnotions.test_cartoon_animations.TabActivity"/>
     </application>
 
 </manifest>

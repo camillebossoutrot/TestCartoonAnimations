@@ -2,12 +2,14 @@
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
 1368807452000 324 aa1f5f1723de9aee2669dc44a26fbc0ce776d35f /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/values-v11/styles.xml
-1368807453000 244 045ff451db7cd8e61285502b8c9bbf7405f2078d /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/menu/main.xml
 1368807453000 181 84de2797380184d8b39af6f829afb092fb956173 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/values-sw600dp/dimens.xml
+1368807453000 244 045ff451db7cd8e61285502b8c9bbf7405f2078d /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/menu/main.xml
 1368807223000 9397 4a5a9affbb731f195fc18fea78d51be7db7536a2 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/drawable-hdpi/ic_launcher.png
 1368817957000 11127 8cfd570439b13ce83acf8d3ad49b9875bc200c63 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/drawable-xhdpi/hour_clock_hand.png
+1369319155000 276 a8c32eb9e696c4e873e4c319b57bdfd12f2eecda /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/layout/activity_tab.xml
 1368807453000 249 59b0926bd0fd2fad72cad78257692f45624d43e2 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/values/strings.xml
 1368827262000 1209 d67c028cfc67118dd450f6de3453e4b736fd13a1 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/layout/activity_second.xml
+1369259630000 443 8dee2c92a01a4b04615c1430f1723107e2411c35 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/layout/activity_third.xml
 1368807223000 14383 82acdd75e3fcc36026109406625edc69d4d7212d /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/drawable-xhdpi/ic_launcher.png
 1368807226000 5237 7761bceaf18ed25cdba5f34bf00a55616d078acf /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/drawable-mdpi/ic_launcher.png
 1368807452000 381 b129b276e01126de5b3b753572ac67cbfc19454c /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/values-v14/styles.xml

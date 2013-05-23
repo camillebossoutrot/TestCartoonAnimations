@@ -2,6 +2,7 @@
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
 1368827276000 1209 d67c028cfc67118dd450f6de3453e4b736fd13a1 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/layout/activity_second.xml
+1369320134000 276 a8c32eb9e696c4e873e4c319b57bdfd12f2eecda /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/layout/activity_tab.xml
 1368818014000 11391 f5cd63ddc11d9f03e359693da3d978063638a710 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/drawable-xhdpi/clock_hand.png
 1368807512000 125 fae9d1b71d520745438010c9ca7cde9c81dfefac /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/values-sw720dp-land/values.xml
 1368818014000 11127 8cfd570439b13ce83acf8d3ad49b9875bc200c63 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/drawable-xhdpi/hour_clock_hand.png
@@ -14,3 +15,4 @@
 1368807512000 244 045ff451db7cd8e61285502b8c9bbf7405f2078d /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/menu/main.xml
 1368807512000 5237 7761bceaf18ed25cdba5f34bf00a55616d078acf /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/drawable-mdpi/ic_launcher.png
 1368807512000 14383 82acdd75e3fcc36026109406625edc69d4d7212d /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/drawable-xhdpi/ic_launcher.png
+1369259635000 443 8dee2c92a01a4b04615c1430f1723107e2411c35 /Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/all/debug/layout/activity_third.xml
