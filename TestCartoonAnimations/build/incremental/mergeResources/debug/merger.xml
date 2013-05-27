@@ -129,6 +129,11 @@
                 path="/Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/layout/activity_tab.xml"
                 qualifiers=""
                 type="layout" />
+            <file
+                name="activity_fourth"
+                path="/Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/src/main/res/layout/activity_fourth.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="/Users/camillebossoutrot/Documents/workspace/other_stuff/TestCartoonAnimations/TestCartoonAnimations/build/res/rs/debug" />
     </dataSet>

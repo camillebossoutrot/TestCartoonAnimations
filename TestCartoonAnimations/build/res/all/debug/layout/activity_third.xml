@@ -9,5 +9,7 @@
         android:layout_width="60dip"
         android:layout_height="60dip"
         android:id="@+id/button"
-        android:background="@drawable/menu_item"/>
+        android:background="@drawable/menu_item"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="60dip"/>
 </RelativeLayout>

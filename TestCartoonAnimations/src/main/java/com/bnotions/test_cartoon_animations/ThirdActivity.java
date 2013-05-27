@@ -21,10 +21,11 @@ public class ThirdActivity extends Activity implements View.OnClickListener {
     public static final int NO_ID = 2038;
     public static final int EXP_ID = 2039;
     public static final int SIN_ID = 2040;
+
     private Button button;
     private RelativeLayout top_layout;
     private boolean isUp = true;
-    private int courbe;
+    private int curve;
     private long duration = 1000;
 
     public void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,7 @@ public class ThirdActivity extends Activity implements View.OnClickListener {
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
         top_layout = (RelativeLayout) findViewById(R.id.top_layout);
-        courbe = EXP_ID;
+        curve = EXP_ID;
     }
 
     @Override
@@ -56,13 +57,13 @@ public class ThirdActivity extends Activity implements View.OnClickListener {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case EXP_ID:
-                courbe = EXP_ID;
+                curve = EXP_ID;
                 break;
             case SIN_ID:
-                courbe = SIN_ID;
+                curve = SIN_ID;
                 break;
             case NO_ID:
-                courbe = NO_ID;
+                curve = NO_ID;
                 break;
             case 500:
                 duration = 500;
@@ -96,20 +97,21 @@ public class ThirdActivity extends Activity implements View.OnClickListener {
     }
 
     private void runDownAnim() {
+
         ValueAnimator animator_left = ValueAnimator.ofObject(new TypeEvaluator<Integer>() {
             @Override
             public Integer evaluate(float x, Integer start_value, Integer end_value) {
 
                 int delta = (end_value - start_value);
                 double d = x;
-                if (courbe == EXP_ID) {
+                if (curve == EXP_ID) {
                     d = (Math.exp(-x) - 1.) / (Math.exp(-1) - 1.);
-                } else if (courbe == SIN_ID) {
+                } else if (curve == SIN_ID) {
                     d = Math.sin(x * 2. * Math.PI) / 4. + x;
                 }
                 return (int) (d * delta);
             }
-        }, button.getLeft(), (top_layout.getWidth() - button.getLeft() - button.getWidth()));
+        }, button.getLeft(), (top_layout.getWidth() - button.getWidth() - button.getLeft()));
         animator_left.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
             @Override
@@ -119,19 +121,20 @@ public class ThirdActivity extends Activity implements View.OnClickListener {
             }
         });
         animator_left.setDuration(duration);
+        //if (courbe == CIRCLE_ID)  animator_left.setRepeatCount(ValueAnimator.INFINITE);
 
         ValueAnimator animator_top = ValueAnimator.ofObject(new TypeEvaluator<Integer>() {
             @Override
-            public Integer evaluate(float fraction, Integer start_value, Integer end_value) {
+            public Integer evaluate(float x, Integer start_value, Integer end_value) {
 
                 int delta = (end_value - start_value);
-                double d = fraction;
-                if (courbe == EXP_ID) {
-                    d = (Math.exp(fraction) - 1.) / (Math.exp(1) - 1.);
+                double d = x;
+                if (curve == EXP_ID) {
+                    d = (Math.exp(x) - 1.) / (Math.exp(1) - 1.);
                 }
                 return (int) (d * delta);
             }
-        }, button.getTop(), (top_layout.getHeight() - button.getTop() - button.getHeight()));
+        }, button.getTop(), (top_layout.getHeight() - button.getHeight() - button.getTop()));
         animator_top.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
             @Override
@@ -141,6 +144,7 @@ public class ThirdActivity extends Activity implements View.OnClickListener {
             }
         });
         animator_top.setDuration(duration);
+        //if (courbe == CIRCLE_ID) animator_top.setRepeatCount(ValueAnimator.INFINITE);
 
         AnimatorSet set = new AnimatorSet();
         set.playTogether(animator_left, animator_top);
@@ -151,18 +155,18 @@ public class ThirdActivity extends Activity implements View.OnClickListener {
 
         ValueAnimator animator_left = ValueAnimator.ofObject(new TypeEvaluator<Integer>() {
             @Override
-            public Integer evaluate(float fraction, Integer start_value, Integer end_value) {
+            public Integer evaluate(float x, Integer start_value, Integer end_value) {
 
                 int delta = (end_value - start_value);
-                double d = fraction;
-                if (courbe == EXP_ID) {
-                    d = (Math.exp(-fraction) - 1.) / (Math.exp(-1) - 1.);
-                } else if (courbe == SIN_ID) {
-                    d = Math.sin(fraction * 2. * Math.PI) / 4. + fraction;
+                double d = x;
+                if (curve == EXP_ID) {
+                    d = (Math.exp(-x) - 1.) / (Math.exp(-1) - 1.);
+                } else if (curve == SIN_ID) {
+                    d = Math.sin(-x * 2. * Math.PI) / 4. + x;
                 }
                 return end_value - (int) (d * delta);
             }
-        }, button.getLeft(), (top_layout.getWidth() - button.getLeft() - button.getWidth()));
+        },0, (top_layout.getWidth() - button.getWidth() - 2*button.getLeft()));
         animator_left.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
             @Override
@@ -175,17 +179,17 @@ public class ThirdActivity extends Activity implements View.OnClickListener {
 
         ValueAnimator animator_top = ValueAnimator.ofObject(new TypeEvaluator<Integer>() {
             @Override
-            public Integer evaluate(float fraction, Integer start_value, Integer end_value) {
+            public Integer evaluate(float x, Integer start_value, Integer end_value) {
 
                 int delta = (end_value - start_value);
-                double d = fraction;
-                if (courbe == EXP_ID){
-                   d = (Math.exp(fraction) - 1.) / (Math.exp(1) - 1.);
-                }
+                double d = x;
+                if (curve == EXP_ID){
+                   d = (Math.exp(x) - 1.) / (Math.exp(1) - 1.);
+                } 
                 return end_value - (int) (d * delta);
 
             }
-        }, button.getTop(), (top_layout.getHeight() - button.getTop() - button.getHeight()));
+        }, 0, (top_layout.getHeight() - button.getHeight() - 2*button.getTop()));
         animator_top.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
             @Override

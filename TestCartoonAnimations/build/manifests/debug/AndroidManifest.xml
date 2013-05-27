@@ -24,7 +24,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.bnotions.test_cartoon_animations.TabActivity"/>
+        <activity android:label="TestCircleAnim" android:name="com.bnotions.test_cartoon_animations.FourthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            </activity>
     </application>
 
 </manifest>
